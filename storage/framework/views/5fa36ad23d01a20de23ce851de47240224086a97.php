@@ -53,7 +53,7 @@ $path="";
 
                             <?php if(session()->get('locale')=="en"): ?>
                                 
-                                
+                                 
                         <h1 class="wow fadeInDown">
                             <?php echo e($banner->title); ?>
 

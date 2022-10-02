@@ -18,6 +18,14 @@
         </div>
 
         <div class="form-group">
+          <label for="inputDesc" class="col-form-label">الترتيب</label>
+          <textarea class="form-control" id="order" name="order">1</textarea>
+          @error('order')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div>
+
+        <div class="form-group">
           <label for="inputDesc" class="col-form-label">Description</label>
           <textarea class="form-control" id="description" name="description">{{old('description')}}</textarea>
           @error('description')

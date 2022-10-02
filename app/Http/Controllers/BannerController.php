@@ -14,7 +14,7 @@ class BannerController extends Controller
      */
     public function index()
     {
-        $banner=Banner::orderBy('id','DESC')->paginate(10);
+        $banner=Banner::orderBy('order','DESC')->paginate(10); 
         return view('backend.banner.index')->with('banners',$banner);
     }
 
@@ -28,7 +28,7 @@ class BannerController extends Controller
         return view('backend.banner.create');
     }
 
-    /**
+    /** 
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -50,6 +50,7 @@ class BannerController extends Controller
             $slug=$slug.'-'.date('ymdis').'-'.rand(0,999);
         }
         $data['slug']=$slug;
+        
         // return $slug;
         $status=Banner::create($data);
         if($status){

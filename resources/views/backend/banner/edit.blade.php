@@ -23,6 +23,18 @@
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
+        <div class="form-group">
+          <label for="inputDesc" class="col-form-label">الترتيب</label>
+          <textarea  style="
+              
+   color: blue;
+   font-size: 25px;
+             
+             " class="form-control" id="order" name="order">{{$banner->order}}</textarea>
+          @error('order')
+          <span class="text-danger">{{$message}}</span>
+          @enderror
+        </div>
 
 
         

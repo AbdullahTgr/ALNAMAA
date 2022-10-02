@@ -55,7 +55,7 @@ $path="";
 
                             @if(session()->get('locale')=="en")
                                 {{-- english --}}
-                                
+                                 
                         <h1 class="wow fadeInDown">
                             {{$banner->title}}
                         <p>{!! html_entity_decode($banner->description) !!}</p>

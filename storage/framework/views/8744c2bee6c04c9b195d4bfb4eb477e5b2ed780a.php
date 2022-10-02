@@ -21,6 +21,14 @@
               <th>S.N.</th>
               <th>Title</th>
               <th>Slug</th>
+              <th  style="
+              
+              background: var(--primary);
+       color: blue;
+       font-size: 25px;
+       text-align: center;
+                 
+                 ">ترتيب</th>
               <th>Photo</th>
               <th>Status</th>
               <th>Action</th>
@@ -31,6 +39,14 @@
               <th>S.N.</th>
               <th>Title</th>
               <th>Slug</th>
+              <th style="
+              
+           background: var(--primary);
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+              
+              ">ترتيب</th>
               <th>Photo</th>
               <th>Status</th>
               <th>Action</th>
@@ -42,6 +58,14 @@
                     <td><?php echo e($banner->id); ?></td>
                     <td><?php echo e($banner->title); ?></td>
                     <td><?php echo e($banner->slug); ?></td>
+                    <td  style="
+                    
+                 background: var(--green);
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+                    
+                    "><?php echo e($banner->order); ?></td>
                     <td>
                         <?php if($banner->photo): ?>
                             <img src="<?php echo e($banner->photo); ?>" class="img-fluid zoom" style="max-width:80px" alt="<?php echo e($banner->photo); ?>">

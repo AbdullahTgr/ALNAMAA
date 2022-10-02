@@ -21,6 +21,14 @@
               <th>S.N.</th>
               <th>Title</th>
               <th>Slug</th>
+              <th  style="
+              
+              background: var(--primary);
+       color: blue;
+       font-size: 25px;
+       text-align: center;
+                 
+                 ">ترتيب</th>
               <th>Photo</th>
               <th>Status</th>
               <th>Action</th>
@@ -31,6 +39,14 @@
               <th>S.N.</th>
               <th>Title</th>
               <th>Slug</th>
+              <th style="
+              
+           background: var(--primary);
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+              
+              ">ترتيب</th>
               <th>Photo</th>
               <th>Status</th>
               <th>Action</th>
@@ -42,6 +58,14 @@
                     <td>{{$banner->id}}</td>
                     <td>{{$banner->title}}</td>
                     <td>{{$banner->slug}}</td>
+                    <td  style="
+                    
+                 background: var(--green);
+    color: blue;
+    font-size: 25px;
+    text-align: center;
+                    
+                    ">{{$banner->order}}</td>
                     <td>
                         @if($banner->photo)
                             <img src="{{$banner->photo}}" class="img-fluid zoom" style="max-width:80px" alt="{{$banner->photo}}">
